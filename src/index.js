@@ -4,10 +4,10 @@ module.exports = function check(str, bracketsConfig) {
         for (j = 0; j < bracketsConfig.length; j++){
             let temp = bracketsConfig[j].join('');
             let indicator = str.includes(temp);
-        //  console.log('New =',indicator,temp);
+        // console.log(temp);
           if (indicator){
             str = str.replace(temp, '');
-            console.log(str);
+           // console.log(str);
           } ;
         };
       };
