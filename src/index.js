@@ -1,5 +1,6 @@
 module.exports = function check(str, bracketsConfig) {
-    for (i = 0; i < str.length+3; i++){
+    
+    for (i = str.length; i > 0; --i){
         for (j = 0; j < bracketsConfig.length; j++){
             let temp = bracketsConfig[j].join('');
             let indicator = str.includes(temp);
@@ -10,6 +11,6 @@ module.exports = function check(str, bracketsConfig) {
           } ;
         };
       };
-      return str == "";
+      return str === "";
     }
 
